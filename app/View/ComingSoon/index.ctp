@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title><?php echo "Test" ?></title>
+
+<?php echo $this->Html->css('1-col-portfolio');
+    echo $this->Html->css('bootstrap');
+    echo $this->Html->script('jquery');
+    echo $this->Html->script('bootstrap'); ?>
+</head>
+
 <body>
 <!-- This is the navigation bar for this webpage -->
 <div class="navbar navbar-default">
@@ -10,8 +27,8 @@
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="whats_on">What's On</a></li>
-      <li><a href="coming_soon">Coming Soon</a></li>
+      <li><a href="whats_on">What's On</a></li>
+      <li class="active"><a href="coming_soon">Coming Soon</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Offers<b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -38,8 +55,8 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <h1 class="page-header">What's On
-                    <small>The shows currently showing at Jordanstown Theatre</small>
+                <h1 class="page-header">Coming Soon
+                    <small>The shows which will be coming soon to Jordanstown Theatre</small>
                 </h1>
             </div>
 
@@ -54,10 +71,11 @@
             </div>
 
             <div class="col-lg-5 col-md-5">
-                <h3>Wicked</h3>
-                <h4>Playful Productions</h4>
-                <p><i>Based on the acclaimed novel by Gregory Maguire that ingeniously re-imagines the stories and characters created by L. Frank Baum in ‘The Wonderful Wizard of Oz’, Wicked tells the incredible untold story of an unlikely but profound friendship between two sorcery students. Their extraordinary adventures in Oz will ultimately see them fulfill their destinies as Glinda The Good and the Wicked Witch of the West.</i></p>
-                <a class="btn btn-primary" href="#">Buy Tickets<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <h3>The Case of the Frightened Lady</h3>
+                <h4>Bruiser Theatre Company</h4>
+                <p><i>"This is a typical Bruiser production – spot on physical theatre, interspersed with song, well-timed slapstick...It’s clever, fast and frenetic."</i></p>
+                <br>
+                <p>Culture Northern Ireland</p>
             </div>
 
         </div>
@@ -76,7 +94,6 @@
                 <h3>Show Two</h3>
                 <h4>Production Group</h4>
                 <p>Show description</p>
-                <a class="btn btn-primary" href="#">Buy Tickets <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
@@ -95,7 +112,6 @@
                 <h3>Show Three</h3>
                 <h4>Production Group</h4>
                 <p>Show description</p>
-                <a class="btn btn-primary" href="#">Buy Tickets <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
@@ -114,7 +130,6 @@
                 <h3>Show Four</h3>
                 <h4>Production Group</h4>
                 <p>Show description</p>
-                <a class="btn btn-primary" href="#">Buy Tickets <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
@@ -133,7 +148,6 @@
                 <h3>Show Five</h3>
                 <h4>Production Group</h4>
                 <p>Show description</p>
-                <a class="btn btn-primary" href="#">Buy Tickets <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>

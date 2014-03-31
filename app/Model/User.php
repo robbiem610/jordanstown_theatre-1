@@ -4,6 +4,11 @@ App::uses('Security', 'Utility');
 
 class User extends AppModel{
 
+	public $displayField = 'firstname';
+
+	public $hasMany = array(
+		'Show');
+
 	public $validate = array(
 		'firstname' => array(
 			'rule' => 'notEmpty',
@@ -18,8 +23,8 @@ class User extends AppModel{
 			'message' => 'Please enter a valid email address.'
 		),
 		'password' => array(
-			'rule' => array('between', 5, 10),
-			'message' => 'Invalid password. Password must be between 5 and 10 characters long.'
+			'rule' => array('between', 2, 10),
+			'message' => 'Invalid password. Password must be between 2 and 10 characters long.'
 		),
 	);
 

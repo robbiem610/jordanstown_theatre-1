@@ -3,19 +3,22 @@
 class UsersController extends AppController{
 
 	public function index(){
+
+		$this->set('title_for_layout', 'Jordanstown Theatre - Users');
 		
 		$users = $this->User->find('all');
-		//pr($users);
+		pr($users);
 
 		$this->set('users', $users);
 	}
 
-	public function add(){
+	public function register(){
 		
 		if( $this->request->is('post') ){
 			
 			$this->User->save( $this->request->data );
 			$this->redirect('/users');
+			$this->users('add');
 		}
 	}
 
